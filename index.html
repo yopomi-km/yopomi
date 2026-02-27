@@ -106,7 +106,7 @@
       display: grid;
       gap: 24px;
       align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: 1fr;
       margin-bottom: 36px;
     }
 
@@ -171,54 +171,6 @@
       border-radius: 999px;
       font-size: 0.85rem;
       box-shadow: 0 6px 16px rgba(100, 120, 140, 0.12);
-    }
-
-    .hero-visual {
-      position: relative;
-      min-height: 260px;
-      display: grid;
-      place-items: center;
-    }
-
-    .cloud {
-      width: 220px;
-      height: 120px;
-      background: #fff;
-      border-radius: 999px;
-      position: relative;
-      box-shadow: var(--shadow);
-    }
-
-    .cloud::before,
-    .cloud::after {
-      content: "";
-      position: absolute;
-      background: #fff;
-      border-radius: 999px;
-    }
-
-    .cloud::before {
-      width: 120px;
-      height: 120px;
-      top: -40px;
-      left: 20px;
-    }
-
-    .cloud::after {
-      width: 140px;
-      height: 140px;
-      top: -60px;
-      right: 20px;
-    }
-
-    .sparkles {
-      position: absolute;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      font-size: 1.8rem;
-      color: #f6c8d9;
-      letter-spacing: 14px;
     }
 
     section {
@@ -351,10 +303,6 @@
           <div class="chip">World Building</div>
           <div class="chip">Sound & UI</div>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="cloud"></div>
-        <div class="sparkles">✦ ✧ ✦</div>
       </div>
     </header>
 
